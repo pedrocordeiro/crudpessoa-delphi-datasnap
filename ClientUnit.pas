@@ -344,7 +344,10 @@ end;
 
 procedure TFrmCliente.FDMemTablePessoaBeforePost(DataSet: TDataSet);
 begin
-  FDMemTablePessoa.FieldByName('flnatureza').AsInteger := CBNaturezaPessoa.ItemIndex;
+  // Copia o valor do combo box para o data set.
+  // Verificar porque não está sendo feito de forma automática
+  if Panel1.Visible then
+    FDMemTablePessoa.FieldByName('flnatureza').AsInteger := CBNaturezaPessoa.ItemIndex;
 end;
 
 procedure TFrmCliente.FormShow(Sender: TObject);
