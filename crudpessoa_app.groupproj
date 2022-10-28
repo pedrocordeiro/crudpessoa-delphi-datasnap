@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E6AD6363-D15D-4320-81D2-CF330DCA5E39}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="crudpessoa.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="crudpessoa_cli.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="crudpessoa">
+        <MSBuild Projects="crudpessoa.dproj"/>
+    </Target>
+    <Target Name="crudpessoa:Clean">
+        <MSBuild Projects="crudpessoa.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="crudpessoa:Make">
+        <MSBuild Projects="crudpessoa.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="crudpessoa_cli">
+        <MSBuild Projects="crudpessoa_cli.dproj"/>
+    </Target>
+    <Target Name="crudpessoa_cli:Clean">
+        <MSBuild Projects="crudpessoa_cli.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="crudpessoa_cli:Make">
+        <MSBuild Projects="crudpessoa_cli.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="crudpessoa;crudpessoa_cli"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="crudpessoa:Clean;crudpessoa_cli:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="crudpessoa:Make;crudpessoa_cli:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

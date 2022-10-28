@@ -1,0 +1,789 @@
+object FrmCliente: TFrmCliente
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Pessoas'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel2: TPanel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 457.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 99
+    object Label5: TLabel
+      Position.X = 40.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nome:'
+      TabOrder = 0
+    end
+    object EdtPequisa: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 136.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button1: TButton
+      Position.X = 464.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 2
+      Text = 'Pesquisar'
+      OnClick = Button1Click
+    end
+    object BtnSelecionar: TButton
+      Position.X = 312.000000000000000000
+      Position.Y = 416.000000000000000000
+      TabOrder = 3
+      Text = 'Selecionar'
+      OnClick = BtnSelecionarClick
+    end
+    object BtnVoltar: TButton
+      Position.X = 208.000000000000000000
+      Position.Y = 416.000000000000000000
+      TabOrder = 4
+      Text = 'Voltar'
+      OnClick = BtnVoltarClick
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+      ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Position.X = 40.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 521.000000000000000000
+      Size.Height = 305.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+  end
+  object Panel3: TPanel
+    Position.X = 7.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 457.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 98
+    object BtnAbrirCSV: TButton
+      Position.X = 248.000000000000000000
+      Position.Y = 416.000000000000000000
+      TabOrder = 0
+      Text = 'Abrir CSV'
+      OnClick = BtnAbrirCSVClick
+    end
+    object BtnVoltar2: TButton
+      Position.X = 152.000000000000000000
+      Position.Y = 416.000000000000000000
+      TabOrder = 1
+      Text = 'Voltar'
+      OnClick = BtnVoltarClick
+    end
+    object GridBindSourceDB5: TGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 593.000000000000000000
+      Size.Height = 353.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      RowCount = 27
+      Viewport.Width = 573.000000000000000000
+      Viewport.Height = 312.000000000000000000
+    end
+    object BtnEnviarCSV: TButton
+      Position.X = 352.000000000000000000
+      Position.Y = 416.000000000000000000
+      TabOrder = 3
+      Text = 'Enviar'
+      OnClick = BtnEnviarCSVClick
+    end
+  end
+  object Panel1: TPanel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 457.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 92
+    object BtnGravar: TButton
+      Position.X = 176.000000000000000000
+      Position.Y = 424.000000000000000000
+      TabOrder = 106
+      Text = '&Gravar'
+      OnClick = BtnGravarClick
+    end
+    object BtnApagar: TButton
+      Position.X = 272.000000000000000000
+      Position.Y = 424.000000000000000000
+      TabOrder = 108
+      Text = '&Apagar'
+      OnClick = BtnApagarClick
+    end
+    object BtnNovo: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 424.000000000000000000
+      TabOrder = 104
+      Text = '&Novo'
+      OnClick = BtnNovoClick
+    end
+    object BtnPesquisar: TButton
+      Position.X = 368.000000000000000000
+      Position.Y = 424.000000000000000000
+      TabOrder = 110
+      Text = '&Pesquisar'
+      OnClick = BtnPesquisarClick
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Natureza:'
+      TabOrder = 10
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Documento:'
+      TabOrder = 13
+    end
+    object EdtDocumento: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 96.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object EdtNome: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 96.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label3: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nome:'
+      TabOrder = 12
+    end
+    object Label4: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sobrenome:'
+      TabOrder = 11
+    end
+    object EdtSobrenome: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 96.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object CBNaturezaPessoa: TComboBox
+      Items.Strings = (
+        'Pessoa F'#237'sica'
+        'Pessoa Jur'#237'dica')
+      Position.X = 96.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+    object Label6: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CEP:'
+      TabOrder = 111
+    end
+    object EdtCEP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 96.000000000000000000
+      Position.Y = 176.000000000000000000
+    end
+    object Label7: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'UF:'
+      TabOrder = 112
+    end
+    object EdtUF: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 96.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label8: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Logradouro:'
+      TabOrder = 113
+    end
+    object EdtLogradouro: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Position.X = 96.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 473.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label9: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 256.000000000000000000
+      Text = 'Cidade:'
+      TabOrder = 114
+    end
+    object EdtCidade: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 96.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label10: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bairro:'
+      TabOrder = 115
+    end
+    object EdtBairro: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Position.X = 96.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label11: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Complemento:'
+      TabOrder = 116
+    end
+    object EdtComplemento: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      Position.X = 96.000000000000000000
+      Position.Y = 360.000000000000000000
+    end
+    object Button2: TButton
+      Position.X = 464.000000000000000000
+      Position.Y = 424.000000000000000000
+      TabOrder = 117
+      Text = 'Importar CSV'
+      OnClick = Button2Click
+    end
+  end
+  object FDMemTablePessoa: TFDMemTable
+    AfterInsert = FDMemTablePessoaAfterInsert
+    FieldDefs = <
+      item
+        Name = 'idpessoa'
+        DataType = ftInteger
+      end
+      item
+        Name = 'flnatureza'
+        DataType = ftInteger
+      end
+      item
+        Name = 'dsdocumento'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'nmprimeiro'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'nmsegundo'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'dtgeracao'
+        DataType = ftDate
+      end>
+    CachedUpdates = True
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 88
+  end
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 552
+    Top = 88
+  end
+  object FDStanStorageBinLink1: TFDStanStorageBinLink
+    Left = 552
+    Top = 32
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTablePessoa
+    ScopeMappings = <>
+    Left = 560
+    Top = 200
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 556
+    Top = 141
+    object LinkControlToFieldnmprimeiro: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'nmprimeiro'
+      Control = EdtNome
+      Track = False
+    end
+    object LinkControlToFieldnmsegundo: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'nmsegundo'
+      Control = EdtSobrenome
+      Track = False
+    end
+    object LinkControlToFielddsdocumento: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'dsdocumento'
+      Control = EdtDocumento
+      Track = False
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB2
+      FillDisplayFieldName = 'nmpessoa'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'idpessoa'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToFielddscep: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'dscep'
+      Control = EdtCEP
+      Track = False
+    end
+    object LinkControlToFielddsuf: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      FieldName = 'dsuf'
+      Control = EdtUF
+      Track = False
+    end
+    object LinkControlToFieldnmcidade: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      FieldName = 'nmcidade'
+      Control = EdtCidade
+      Track = False
+    end
+    object LinkControlToFieldnmbairro: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      FieldName = 'nmbairro'
+      Control = EdtBairro
+      Track = False
+    end
+    object LinkControlToFieldnmlogradouro: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      FieldName = 'nmlogradouro'
+      Control = EdtLogradouro
+      Track = False
+    end
+    object LinkControlToFielddscomplemento: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      FieldName = 'dscomplemento'
+      Control = EdtComplemento
+      Track = False
+    end
+    object LinkPropertyToFieldflnatureza: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'flnatureza'
+      Component = CBNaturezaPessoa
+      ComponentProperty = 'ItemIndex'
+    end
+    object LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB5
+      GridControl = GridBindSourceDB5
+      Columns = <>
+    end
+  end
+  object FDMemTablePesquisa: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'idpessoa'
+      end
+      item
+        Name = 'nmpessoa'
+      end>
+    CachedUpdates = True
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 32
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDMemTablePesquisa
+    ScopeMappings = <>
+    Left = 560
+    Top = 256
+  end
+  object FDMemTableEndereco: TFDMemTable
+    AfterInsert = FDMemTableEnderecoAfterInsert
+    FieldDefs = <
+      item
+        Name = 'idendereco'
+        DataType = ftInteger
+      end
+      item
+        Name = 'idpessoa'
+        DataType = ftInteger
+      end
+      item
+        Name = 'dscep'
+        DataType = ftString
+        Size = 20
+      end>
+    CachedUpdates = True
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 144
+  end
+  object FDMemTableEnderecoIntegracao: TFDMemTable
+    AfterInsert = FDMemTableEnderecoIntegracaoAfterInsert
+    FieldDefs = <
+      item
+        Name = 'idendereco'
+        DataType = ftInteger
+      end
+      item
+        Name = 'dsuf'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'nmcidade'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'nmbairro'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'nmlogradouro'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'dscomplemento'
+        DataType = ftString
+        Size = 20
+      end>
+    CachedUpdates = True
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 208
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = FDMemTableEndereco
+    ScopeMappings = <>
+    Left = 552
+    Top = 312
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = FDMemTableEnderecoIntegracao
+    ScopeMappings = <>
+    Left = 552
+    Top = 376
+  end
+  object FDMemTableNextIdPessoa: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'nextidpessoa'
+        DataType = ftInteger
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 272
+  end
+  object FDMemTableNextIdEndereco: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'nextidendereco'
+        DataType = ftInteger
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 408
+    Top = 340
+  end
+  object FDBatchMoveTextReader1: TFDBatchMoveTextReader
+    DataDef.Fields = <
+      item
+        FieldName = 'flnatureza'
+        DataType = atLongInt
+        FieldSize = 1
+      end
+      item
+        FieldName = 'dsdocumento'
+        DataType = atLongInt
+        FieldSize = 4
+      end
+      item
+        FieldName = 'nmprimeiro'
+        DataType = atString
+        FieldSize = 8
+      end
+      item
+        FieldName = 'nmsegundo'
+        DataType = atString
+        FieldSize = 3
+      end
+      item
+        FieldName = 'dscep'
+        DataType = atLongInt
+        FieldSize = 4
+      end
+      item
+        FieldName = 'dsuf'
+        DataType = atString
+        FieldSize = 2
+      end
+      item
+        FieldName = 'nmcidade'
+        DataType = atString
+        FieldSize = 8
+      end
+      item
+        FieldName = 'nmbairro'
+        DataType = atString
+        FieldSize = 9
+      end
+      item
+        FieldName = 'nmlogradouro'
+        DataType = atString
+        FieldSize = 6
+      end
+      item
+        FieldName = 'dscomplemento'
+        DataType = atString
+        FieldSize = 4
+      end>
+    DataDef.Delimiter = '"'
+    DataDef.Separator = ';'
+    DataDef.RecordFormat = rfCustom
+    DataDef.WithFieldNames = True
+    Left = 71
+    Top = 32
+  end
+  object FDMemTableCSV: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'flnatureza'
+        DataType = ftLargeint
+      end
+      item
+        Name = 'dsdocumento'
+        DataType = ftLargeint
+      end
+      item
+        Name = 'nmprimeiro'
+        DataType = ftString
+        Size = 8
+      end
+      item
+        Name = 'nmsegundo'
+        DataType = ftString
+        Size = 3
+      end
+      item
+        Name = 'dscep'
+        DataType = ftLargeint
+      end
+      item
+        Name = 'dsuf'
+        DataType = ftString
+        Size = 2
+      end
+      item
+        Name = 'nmcidade'
+        DataType = ftString
+        Size = 8
+      end
+      item
+        Name = 'nmbairro'
+        DataType = ftString
+        Size = 9
+      end
+      item
+        Name = 'nmlogradouro'
+        DataType = ftString
+        Size = 6
+      end
+      item
+        Name = 'dscomplemento'
+        DataType = ftString
+        Size = 4
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode, evItems]
+    FetchOptions.Mode = fmManual
+    FetchOptions.Items = [fiMeta]
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.UpdateChangedFields = False
+    UpdateOptions.LockWait = True
+    UpdateOptions.RefreshMode = rmManual
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.CheckReadOnly = False
+    UpdateOptions.CheckUpdatable = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 71
+    Top = 96
+  end
+  object FDBatchMoveDataSetWriter1: TFDBatchMoveDataSetWriter
+    DataSet = FDMemTableCSV
+    Left = 71
+    Top = 160
+  end
+  object DataSource1: TDataSource
+    DataSet = FDMemTableCSV
+    Left = 72
+    Top = 232
+  end
+  object BindSourceDB5: TBindSourceDB
+    DataSource = DataSource1
+    ScopeMappings = <>
+    Left = 152
+    Top = 232
+  end
+  object FDBatchMove1: TFDBatchMove
+    Reader = FDBatchMoveTextReader1
+    Writer = FDBatchMoveDataSetWriter1
+    Mappings = <>
+    LogFileName = 'Data.log'
+    Left = 71
+    Top = 304
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 71
+    Top = 368
+  end
+end

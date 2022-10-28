@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/26 14:34:18.000.948,=C:\Delphi\crudpessoa\FormUnit1.pas</Transaction>
+    <Transaction>2022/10/26 14:34:21.000.354,=C:\Delphi\crudpessoa\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2022/10/26 14:34:23.000.389,=C:\Delphi\crudpessoa\WebModuleUnit1.pas</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.618,=C:\Delphi\crudpessoa\js\json2-min.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.692,=C:\Delphi\crudpessoa\js\CallbackFramework-min.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.655,=C:\Delphi\crudpessoa\js\ServerFunctionExecutor-min.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.566,=C:\Delphi\crudpessoa\js\ServerFunctions.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.806,=C:\Delphi\crudpessoa\templates\ReverseString.html</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.711,=C:\Delphi\crudpessoa\js\connection.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.587,=C:\Delphi\crudpessoa\js\base64-min.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.833,=C:\Delphi\crudpessoa\templates\ServerFunctionInvoker.html</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.738,=C:\Delphi\crudpessoa\js\ServerFunctionInvoker.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.506,=C:\Delphi\crudpessoa\js\json2.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.538,=C:\Delphi\crudpessoa\js\CallbackFramework.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.427,=C:\Delphi\crudpessoa\js\base64.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.466,=C:\Delphi\crudpessoa\js\ServerFunctionExecutor.js</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.760,=C:\Delphi\crudpessoa\css\main.css</Transaction>
+    <Transaction>2022/10/26 14:34:25.000.774,=C:\Delphi\crudpessoa\css\ServerFunctionInvoker.css</Transaction>
+    <Transaction>2022/10/26 14:34:26.000.188,=C:\Delphi\crudpessoa\images\expand.png</Transaction>
+    <Transaction>2022/10/26 14:34:26.000.183,=C:\Delphi\crudpessoa\images\collapse.png</Transaction>
+    <Transaction>2022/10/26 14:37:31.000.700,C:\Delphi\crudpessoa\ServerUnit.dfm=C:\Delphi\crudpessoa\FormUnit1.dfm</Transaction>
+    <Transaction>2022/10/26 14:37:31.000.700,C:\Delphi\crudpessoa\ServerUnit.pas=C:\Delphi\crudpessoa\FormUnit1.pas</Transaction>
+    <Transaction>2022/10/26 19:38:55.000.497,=E:\temp\psqlodbc_13_02_0000\psqlodbc\libpq.dll</Transaction>
+    <Transaction>2022/10/26 19:39:26.000.220,E:\temp\psqlodbc_13_02_0000\psqlodbc\libpq.dll=</Transaction>
+    <Transaction>2022/10/26 20:34:48.000.690,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/26 20:34:49.000.174,=C:\Delphi\crudpessoa\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2022/10/26 23:00:39.000.536,=C:\Delphi\crudpessoa\ClientClassesUnit2.pas</Transaction>
+    <Transaction>2022/10/26 23:00:40.000.460,=C:\Delphi\crudpessoa\ClientModuleUnit2.pas</Transaction>
+    <Transaction>2022/10/26 23:18:10.000.018,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/26 23:18:17.000.172,C:\Delphi\crudpessoa\ClientModuleUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:21:40.000.559,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:21:41.000.326,=C:\Delphi\crudpessoa\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:26:21.000.704,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:26:21.000.807,C:\Delphi\crudpessoa\ClientModuleUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:30:00.000.760,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:30:00.000.845,=C:\Delphi\crudpessoa\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:32:26.000.923,C:\Delphi\crudpessoa\ClientModuleUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:32:33.000.154,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:33:05.000.731,=C:\Delphi\crudpessoa\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:35:18.000.255,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:36:20.000.145,=C:\Delphi\crudpessoa\ClientClassesUnit2.pas</Transaction>
+    <Transaction>2022/10/27 07:36:20.000.219,=C:\Delphi\crudpessoa\ClientModuleUnit2.pas</Transaction>
+    <Transaction>2022/10/27 07:38:41.000.304,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:38:41.000.370,C:\Delphi\crudpessoa\ClientModuleUnit1.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

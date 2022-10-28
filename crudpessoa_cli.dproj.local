@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/26 14:44:39.000.849,=C:\Users\pedro_l32q3ii\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/26 20:25:42.000.030,=C:\Users\pedro_l32q3ii\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/26 20:38:14.000.748,C:\Users\pedro_l32q3ii\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.fmx=C:\Delphi\crudpessoa\ClientUnit.fmx</Transaction>
+    <Transaction>2022/10/26 20:38:14.000.748,C:\Users\pedro_l32q3ii\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Delphi\crudpessoa\ClientUnit.pas</Transaction>
+    <Transaction>2022/10/26 20:39:11.000.803,C:\Users\pedro_l32q3ii\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Delphi\crudpessoa\crudpessoa_cli.dproj</Transaction>
+    <Transaction>2022/10/26 22:16:32.000.090,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/26 22:17:15.000.510,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/26 23:12:50.000.905,=C:\Delphi\crudpessoa\ClientClassesUnit2.pas</Transaction>
+    <Transaction>2022/10/26 23:12:51.000.035,=C:\Delphi\crudpessoa\ClientModuleUnit2.pas</Transaction>
+    <Transaction>2022/10/26 23:33:05.000.871,C:\Delphi\crudpessoa\ClientClassesUnit1.dfm=C:\Delphi\crudpessoa\ClientModuleUnit2.dfm</Transaction>
+    <Transaction>2022/10/26 23:33:05.000.871,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=C:\Delphi\crudpessoa\ClientModuleUnit2.pas</Transaction>
+    <Transaction>2022/10/26 23:34:13.000.405,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:31:57.000.901,=C:\Delphi\crudpessoa\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2022/10/27 07:35:28.000.032,C:\Delphi\crudpessoa\ClientClassesUnit1.pas=</Transaction>
+    <Transaction>2022/10/27 07:44:58.000.236,=C:\Delphi\crudpessoa\ClientClassesUnit3.pas</Transaction>
+    <Transaction>2022/10/27 07:44:58.000.299,=C:\Delphi\crudpessoa\ClientModuleUnit3.pas</Transaction>
+    <Transaction>2022/10/27 10:43:51.000.494,=C:\Delphi\crudpessoa\Unit1.pas</Transaction>
+    <Transaction>2022/10/27 10:58:27.000.807,C:\Delphi\crudpessoa\Unit1.pas=C:\Delphi\crudpessoa\PesquisaPessoa.pas</Transaction>
+    <Transaction>2022/10/27 10:58:27.000.807,C:\Delphi\crudpessoa\Unit1.fmx=C:\Delphi\crudpessoa\PesquisaPessoa.fmx</Transaction>
+    <Transaction>2022/10/27 12:22:35.000.380,C:\Delphi\crudpessoa\PesquisaPessoa.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services-ads-7.0.0.dex.jar"/>
+    <File Path="google-play-services-analytics-7.0.0.dex.jar"/>
+    <File Path="google-play-services-base-7.0.0.dex.jar"/>
+    <File Path="google-play-services-gcm-7.0.0.dex.jar"/>
+    <File Path="google-play-services-identity-7.0.0.dex.jar"/>
+    <File Path="google-play-services-maps-7.0.0.dex.jar"/>
+    <File Path="google-play-services-panorama-7.0.0.dex.jar"/>
+    <File Path="google-play-services-plus-7.0.0.dex.jar"/>
+    <File Path="google-play-services-wallet-7.0.0.dex.jar"/>
+    <File Path="ClientUnit.pas"/>
+    <File Path="ClientUnit.fmx"/>
+    <File Path="ClientClassesUnit3.pas"/>
+    <File Path="ClientModuleUnit3.pas"/>
+    <File Path="ClientModuleUnit3.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
