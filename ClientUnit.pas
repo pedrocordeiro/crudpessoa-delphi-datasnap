@@ -106,6 +106,7 @@ type
     procedure FDMemTablePessoaAfterInsert(DataSet: TDataSet);
     procedure FDMemTableEnderecoAfterInsert(DataSet: TDataSet);
     procedure FDMemTableEnderecoIntegracaoAfterInsert(DataSet: TDataSet);
+    procedure FDMemTablePessoaBeforePost(DataSet: TDataSet);
   private
     IdPessoaAtual: Integer;
     { Private declarations }
@@ -339,6 +340,11 @@ end;
 procedure TFrmCliente.FDMemTablePessoaAfterInsert(DataSet: TDataSet);
 begin
   FDMemTablePessoa.FieldByName('idpessoa').AsInteger := GetNextIdPessoa;
+end;
+
+procedure TFrmCliente.FDMemTablePessoaBeforePost(DataSet: TDataSet);
+begin
+  FDMemTablePessoa.FieldByName('flnatureza').AsInteger := CBNaturezaPessoa.ItemIndex;
 end;
 
 procedure TFrmCliente.FormShow(Sender: TObject);

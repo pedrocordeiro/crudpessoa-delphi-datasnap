@@ -328,6 +328,7 @@ object FrmCliente: TFrmCliente
   end
   object FDMemTablePessoa: TFDMemTable
     AfterInsert = FDMemTablePessoaAfterInsert
+    BeforePost = FDMemTablePessoaBeforePost
     FieldDefs = <
       item
         Name = 'idpessoa'
